@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>経理を、前へ。｜経理代行・経理改善｜BASEマネジメントワークス株式会社</title>
+<title>経理を、前へ。｜経理改善代行｜BASEマネジメントワークス株式会社</title>
 <meta name="description" content="領収書や請求書がたまる、経理が担当者任せ、前月の数字が出てこない。そんな会社の経理を、BASEマネジメントワークス株式会社が支援します。記帳・請求・支払から月次決算まで毎月の経理を引き受け、担当・手順・期限を整えます。経理代行・改善は月額88,000円〜（税抜）。初回相談は30分・オンライン・無料。">
 <meta name="theme-color" content="#0D4549">
 <script>document.documentElement.className+=" js";</script>
@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Old+Mincho:wght@700;900&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
-   BASEマネジメントワークス株式会社｜経理代行・経理改善
+   BASEマネジメントワークス株式会社｜経理改善代行
    色：青緑 #0D4549／アイボリー #F7F5EF／金 #E6C65A（相談ボタン）
    見出し：明朝（Zen Old Mincho）　本文：ゴシック（Noto Sans JP）
    ========================================================= */
@@ -117,7 +117,7 @@ h1,h2,h3{font-family:var(--mincho);font-weight:700;line-height:1.36;letter-spaci
 .hero-fig::after{content:"";position:absolute;inset:0;background:
   linear-gradient(90deg,#0D4549 0,rgba(13,69,73,.8) 12%,rgba(13,69,73,.3) 30%,rgba(13,69,73,0) 46%),
   linear-gradient(180deg,rgba(13,69,73,.5) 0,rgba(13,69,73,0) 16%),
-  linear-gradient(180deg,rgba(13,69,73,0) 46%,rgba(13,69,73,.82) 84%,#0D4549 100%)}
+  linear-gradient(180deg,rgba(13,69,73,0) calc(100% - 132px),rgba(13,69,73,.9) calc(100% - 84px),#0D4549 calc(100% - 36px))}
 .hero-in{position:relative;margin-top:-84px;padding-bottom:clamp(56px,9vw,88px)}
 .hero-svc{display:block;margin-bottom:10px;font-family:var(--gothic);font-size:clamp(15px,13.4px + .45vw,20px);font-weight:700;letter-spacing:.14em;line-height:1.5;color:var(--gold)}
 .hero-main{display:block;font-weight:900;font-size:clamp(48px,15vw,104px);line-height:1.1;letter-spacing:0}
@@ -139,11 +139,11 @@ h1,h2,h3{font-family:var(--mincho);font-weight:700;line-height:1.36;letter-spaci
 
 @media (min-width:900px){
   .hero{display:flex;align-items:center;min-height:min(100vh,960px);min-height:min(100svh,960px)}
-  .hero-fig{position:absolute;inset:0 0 0 auto;width:min(56%,940px);max-width:none;height:auto;margin:0;aspect-ratio:auto}
+  .hero-fig{position:absolute;inset:var(--hh) 0 0 auto;width:min(56%,940px);max-width:none;height:auto;margin:0;aspect-ratio:auto}
   .hero-fig img{transform-origin:56% 28%;transform:scale(calc(1 + var(--p,0) * .07));will-change:transform}
   .hero-fig::after{background:
     linear-gradient(90deg,#0D4549 0,rgba(13,69,73,.84) 10%,rgba(13,69,73,.36) 26%,rgba(13,69,73,0) 42%),
-    linear-gradient(180deg,rgba(8,47,50,.6) 0,rgba(8,47,50,0) 19%)}
+    linear-gradient(180deg,#0D4549 0,rgba(13,69,73,.5) 5%,rgba(13,69,73,0) 17%)}
   .hero-in{margin-top:0;padding-top:calc(var(--hh) + clamp(8px,2vh,28px));padding-bottom:clamp(28px,5vh,64px)}
   .hero-text{max-width:min(46vw,640px)}
   .hero-svc{margin-bottom:clamp(8px,1.6vh,18px)}
@@ -389,7 +389,7 @@ h1,h2,h3{font-family:var(--mincho);font-weight:700;line-height:1.36;letter-spaci
 .ft nav{display:flex;flex-wrap:wrap;gap:8px 26px}
 .ft nav a{text-decoration:none}
 .ft nav a:hover{color:var(--ivory);text-decoration:underline}
-body.has-sticky .ft{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+@media (max-width:767px){.js .ft{padding-bottom:calc(112px + env(safe-area-inset-bottom))}}  /* 固定ボタンの分の余白を最初から確保（表示時に段差が出ないように） */
 
 /* ---------- スマホの固定相談ボタン ---------- */
 .sticky{position:fixed;inset:auto 0 0 0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(8,47,50,.97);border-top:1px solid rgba(247,245,239,.16);visibility:hidden;transform:translateY(110%);transition:transform .25s,visibility 0s .25s}
@@ -442,12 +442,12 @@ body.has-sticky .ft{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
   <figure class="hero-fig">
     <picture>
       <source media="(max-width: 899px)" srcset="hero-sp.webp" width="1100" height="831">
-      <img src="hero-main.webp" alt="代表の柴沼 寛人" width="1600" height="1920" fetchpriority="high" decoding="async">
+      <img src="hero-main.webp" alt="代表の柴沼 寛人" width="1500" height="1363" fetchpriority="high" decoding="async">
     </picture>
   </figure>
   <div class="wrap hero-in">
     <div class="hero-text">
-      <h1 id="hero-h"><span class="hero-svc">経理代行・経理改善</span><span class="hero-main"><span class="l1">経理を、</span><span class="l2">前へ。</span></span></h1>
+      <h1 id="hero-h"><span class="hero-svc">経理改善代行</span><span class="hero-main"><span class="l1">経理を、</span><span class="l2">前へ。</span></span></h1>
       <p class="hero-sub">社長の右腕として、<br>実務から改善まで。</p>
       <p class="hero-desc ph">記帳・請求・支払から月次決算まで。<br><span class="u">毎月の経理を引き受け、</span><span class="u">担当・手順・期限を整えます。</span></p>
       <p class="hero-price"><span class="hp-label">経理代行・改善</span><span class="hp-num">月額<b>88,000</b>円〜<small>（税抜）</small></span><a href="#pricing">料金の詳細</a></p>
@@ -772,7 +772,7 @@ body.has-sticky .ft{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
 
 <footer class="ft">
   <div class="wrap">
-    <div><b>BASEマネジメントワークス株式会社</b>経理代行・経理改善</div>
+    <div><b>BASEマネジメントワークス株式会社</b>経理改善代行</div>
     <nav aria-label="フッター">
       <a href="#company">会社情報</a>
       <a href="privacy.html">プライバシーポリシー</a>
@@ -936,7 +936,6 @@ body.has-sticky .ft{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
       sticky.classList.toggle('show', show);
       sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
       if (link) link.tabIndex = show ? 0 : -1;
-      if (d.body) d.body.classList.toggle('has-sticky', show);
     }
     targets.forEach(function(t, i){
       new IntersectionObserver(function(es){
